@@ -174,26 +174,49 @@ header nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #1e1e1e;
+  background-color: #666666;
 }
 header nav a {
   padding: 1.2rem;
   font-size: 1.7rem;
 }
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.5rem;
+  }
+}
 .intro {
   width: 80%;
   padding: 1rem;
+  margin: 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+  }
 }
 .intro div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .intro div {
+    flex-direction: column;
+  }
+}
 .intro p {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .intro p {
+    width: 80%;
+    margin: 20px 0;
+    text-align: center;
+  }
 }
 .intro img {
   max-width: 150px;
@@ -210,6 +233,12 @@ header nav a {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .skills div {
+    flex-wrap: wrap;
+  }
 }
 .skills p {
   padding: 0.5rem;
@@ -228,12 +257,28 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .work .job {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+}
 .work p {
   width: 30%;
   padding: 1rem;
 }
+@media (max-width: 500px) {
+  .work p {
+    width: 100%;
+  }
+}
 .work ul {
   width: 60%;
+}
+@media (max-width: 500px) {
+  .work ul {
+    width: 100%;
+  }
 }
 .work li {
   padding-top: 1rem;
@@ -259,6 +304,13 @@ header nav a {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .education .school {
+    flex-direction: column;
+    margin: 20px 0;
+  }
 }
 .education .ed-study {
   font-weight: 600;
@@ -281,6 +333,7 @@ header nav a {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem;
 }
 .contact img {
@@ -296,9 +349,14 @@ footer nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #1e1e1e;
+  background-color: #666666;
 }
 footer nav a {
   padding: 1.2rem;
   font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  footer nav a {
+    font-size: 1.5rem;
+  }
 }

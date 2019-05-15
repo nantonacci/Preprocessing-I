@@ -140,6 +140,17 @@ table {
 @link-hover: #0b00ce;
 @debug: 1px solid red;
 @dark-grey: #1e1e1e;
+@light-grey: #666666;
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 html {
   font-size: 62.5%;
@@ -185,19 +196,20 @@ a:hover {
 
 header {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .center;
 
   nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: @dark-grey;
+    background-color: @light-grey;
 
     a {
       padding: 1.2rem;
       font-size: 1.7rem;
+      @media (max-width: 500px) {
+        font-size: 1.5rem;
+      }
     }
   } //nav
 } //header
@@ -205,18 +217,26 @@ header {
 .intro {
   width: 80%;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 2rem 0;
+  .space-between;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 
   div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .space-between;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
   }
 
   p {
     width: 45%;
+    @media (max-width: 500px) {
+      width: 80%;
+      margin: 20px 0;
+      text-align: center;
+    }
   }
   img {
     max-width: 150px;
@@ -233,8 +253,10 @@ header {
 
   div {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    .space-between;
+    @media (max-width: 500px) {
+      flex-wrap: wrap;
+    }
   }
 
   p {
@@ -247,23 +269,31 @@ header {
 .work {
   width: 80%;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .space-between;
   flex-direction: column;
 
   .job {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      margin: 20px 0;
+    }
   }
 
   p {
     width: 30%;
     padding: 1rem;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
 
   ul {
     width: 60%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
 
   li {
@@ -283,15 +313,16 @@ header {
 .education {
   width: 80%;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .space-between;
   flex-direction: column;
 
   .school {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    .space-between;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      margin: 20px 0;
+    }
   }
 
   .ed-study {
@@ -309,14 +340,11 @@ header {
 
 .contact {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .center;
 
   .contact-methods {
     width: 60%;
-    display: flex;
-    justify-content: space-between;
+    .space-between;
     padding: 2rem;
   }
 
@@ -327,19 +355,20 @@ header {
 
 footer {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .center;
 
   nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: @dark-grey;
+    background-color: @light-grey;
 
     a {
       padding: 1.2rem;
       font-size: 1.7rem;
+      @media (max-width: 500px) {
+        font-size: 1.5rem;
+      }
     }
   } //nav
 }
