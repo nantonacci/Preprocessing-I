@@ -138,6 +138,9 @@ body {
   height: 100%;
   font-family: 'Fira Sans', sans-serif;
 }
+body {
+  background-color: #1e1e1e;
+}
 h2 {
   font-size: 2rem;
 }
@@ -160,7 +163,6 @@ a:hover {
   flex-direction: column;
   background: white;
   font-size: 1.5rem;
-  border: 1px solid red;
 }
 header {
   width: 100%;
@@ -172,6 +174,7 @@ header nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #1e1e1e;
 }
 header nav a {
   padding: 1.2rem;
@@ -183,19 +186,14 @@ header nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 .intro div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.intro h2 {
-  border: 1px solid red;
-}
 .intro p {
   width: 45%;
-  border: 1px solid red;
 }
 .intro img {
   max-width: 150px;
@@ -207,7 +205,6 @@ header nav a {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  border: 1px solid red;
 }
 .skills div {
   width: 100%;
@@ -218,7 +215,6 @@ header nav a {
   padding: 0.5rem;
   font-weight: 600;
   text-align: center;
-  border: 1px solid red;
 }
 .work {
   width: 80%;
@@ -231,13 +227,16 @@ header nav a {
 .work .job {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 .work p {
   width: 30%;
+  padding: 1rem;
 }
 .work ul {
   width: 60%;
+}
+.work li {
+  padding-top: 1rem;
 }
 .work .job-title {
   font-weight: 600;
@@ -248,10 +247,58 @@ header nav a {
 .work .job-duration {
   font-size: 1.2rem;
 }
+.education {
+  width: 80%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.education .school {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.education .ed-study {
+  font-weight: 600;
+  padding-right: 1rem;
+}
+.education .ed-location {
+  font-style: italic;
+  padding-right: 1rem;
+}
+.education .ed-time {
+  font-weight: 600;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-methods {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.contact img {
+  width: 35px;
+}
 footer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1e1e1e;
+}
+footer nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+}
+footer nav a {
+  padding: 1.2rem;
+  font-size: 1.7rem;
 }
